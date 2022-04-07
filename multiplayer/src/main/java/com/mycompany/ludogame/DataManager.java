@@ -7,14 +7,9 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-String[] Socketmetadata = {127.0.0.1 8080};//adjust to suit computer
-
-public class DataMManager {
-    public LUDOMoves clientinitial(String[] Socketmetadata)  throws IOException {
-        if (args.length != 2) {
-            System.err.println("Usage: java Eccho clien <hos nam >  <por number>");
-            System.exit(1);
-        }   
+public class DataManager {
+    public void clientinitial()  throws IOException {
+        String[] Socketmetadata = {"10.18.112.66","8008"};//adjust to suit computer
         String hostName = Socketmetadata[0];
         int portNumber = Integer.parseInt(Socketmetadata[1]);
         try(Socket echoSocket = new Socket (hostName, portNumber);
@@ -29,5 +24,6 @@ public class DataMManager {
             System.err.println("Could not ge I/O for he connection to " + hostName);
             System.exit(1);
         }
+}
+}
 
-    }
