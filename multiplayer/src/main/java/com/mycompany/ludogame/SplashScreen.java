@@ -10,6 +10,7 @@ public class SplashScreen {
 	        mainf.setResizable(false);
 	        mainf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	        LUDOMoves ludo = new LUDOMoves();
+			ludo = clientinitial
 	        ludo.setFocusable(true);
 	        ludo.addKeyListener(ludo);
 	        ludo.addMouseListener(ludo);
